@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1c1d1f;
+}
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    position: relative;
+    z-index: 1010;
+    padding: 1rem 0;
+}
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+.wrapper .logo_wrapper img {
+    width: 100px;
+}
+.dropdown_wrapper{
+    position: relative;
+    right: 0;
+}
+.dropdown_content{
+    position: absolute;
+    right: 6;
+    top: 40px;
+    font-size: 14px;
+    border: 1px solid rgb(176, 176, 176);
+    background-color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 228px;
+    /* line-height: 1.4rem; */
+    display: none;
+}
+.dropdown_wrapper:hover .dropdown_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.dropdown_item{
+    padding: 5px;
+}
+#search_box {
+    font-size: 14px;
+    padding: 18px 120px 18px 2px;
+    border-radius: 50px;
+    border: 1px solid rgb(137, 137, 137);
+    outline: none;
+}
+section{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    vertical-align: middle;
+    width: 100%;
+}
