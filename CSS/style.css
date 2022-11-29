@@ -99,7 +99,7 @@ header .wrapper {
     color: gray;
 }
 
-#cart_wrapper #cart_icon {
+.cart_wrapper #cart_icon {
     height: 28px;
 }
 
@@ -165,9 +165,9 @@ section img {
 
 article {
     background-color: white;
-    width: 30%;
-    position: fixed;
-    top: 128px;
+    width: 380px;
+    position: relative;
+    bottom: 268px;
     left: 80px;
     z-index: 200;
     box-shadow: 1px 1px 8px gray;
@@ -191,12 +191,6 @@ article #hero_content p {
     padding: 8px 1px 8px 6px;
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 1050px) {}
 
-@media screen and (min-width: 600px) {}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 992px) {}
-
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1050px) {}
