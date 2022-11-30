@@ -17,13 +17,13 @@ header {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     position: relative;
     z-index: 1010;
-    padding: 2rem 2rem;
+    padding: 1.2rem 2rem;
 }
 
 header .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 0 auto;
@@ -242,37 +242,41 @@ header .wrapper {
     height: 20px;
 }
 
+/*
 section {
-    /* background-image: url('../images/background.jpg'); */
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    width: auto;
+    width: auto; 
 }
 
 section img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+    align-items: center; 
+}
+*/
+article {
+    position: relative;
+    width: 100%;
+
 }
 
-article {
+#hero_content {
     background-color: white;
-    width: 380px;
-    position: relative;
-    bottom: 268px;
-    left: 80px;
+    width: 30%;
+    position: absolute;
+    bottom: 162px;
+    left: 82px;
     z-index: 200;
     box-shadow: 1px 1px 8px gray;
-    padding: 18px 16px;
+    padding: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
 }
 
 article #hero_content h1 {
     font-size: 28px;
     font-weight: 800;
-    padding: 8px 6px;
+    padding: 6px 8px;
 }
 
 article #hero_content p {
@@ -280,283 +284,40 @@ article #hero_content p {
     font-size: 20px;
     font-weight: 200;
     line-height: 1.8rem;
-    padding: 8px 1px 8px 6px;
+    padding: 6px 12px 6px 8px;
 }
 
-@media screen and (max-width: 1050px) {
-    /* header {
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-        position: relative;
-        z-index: 1010;
-        padding: 0.5rem 0.5rem;
-    }
-
-    header .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        flex-wrap: nowrap;
-    }
-
-    .wrapper .logo_wrapper img {
-        width: 100px;
-    }
-
-    .dropdown_wrapper {
-        position: relative;
-        right: 0;
-    }
-
-    .dropdown_content {
-        position: absolute;
-        right: 6;
-        top: 20px;
-        font-size: 14px;
-        border: 1px solid rgb(176, 176, 176);
-        background-color: white;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 228px;
-        display: none;
-        z-index: 1020;
-    }
-
-    .dropdown_content a:hover {
-        color: blueviolet;
-    }
-
-    .dropdown_wrapper:hover .dropdown_content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .dropdown_content .dropdown_item {
-        padding: 5px;
-    }
-
-    .dropdown_item a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .dropdown_content .dropdown_item a:hover {
-        color: blueviolet;
-    }
-
-    #search_box {
-        font-size: 14px;
-        padding: 14px 120px 14px 22px;
-        border-radius: 50px;
-        border: 1px solid black;
-        outline: none;
-    }
-
-    #search_wrapper {
-        position: relative;
-    }
-
-    #search_wrapper #search_icon {
-        height: 20px;
-        position: absolute;
-        top: 14px;
-        left: 3px;
-        color: gray;
-    }
-
-    .business_wrapper .dropdown_content {
-        text-align: center;
-        font-weight: 600;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 328px;
-        padding: 8px;
-        right: 2px;
-    }
-
-    .business_wrapper .dropdown_content button {
-        background-color: black;
-        border: none;
-        color: white;
-        margin-top: 8px;
-        padding: 8px;
-    }
-
-    .business_wrapper .dropdown_content button a {
-        background-color: black;
-        border: none;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .business_wrapper .dropdown_content button a:hover {
-        color: white;
-    }
-
-    .teach_wrapper .dropdown_content {
-        text-align: center;
-        font-weight: 600;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 288px;
-        padding: 8px;
-        right: 0;
-    }
-
-    .teach_wrapper .dropdown_content button {
-        background-color: black;
-        border: none;
-        color: white;
-        margin-top: 8px;
-        padding: 8px;
-    }
-
-    .teach_wrapper .dropdown_content button a {
-        background-color: black;
-        border: none;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .teach_wrapper .dropdown_content button a:hover {
-        color: white;
-    }
-
-    .cart_wrapper .dropdown_content {
-        text-align: center;
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 288px;
-        top: 28px;
-        right: -16px;
-        padding: 12px;
-    }
-
-    .cart_wrapper .dropdown_content p {
-        border: none;
-        color: gray;
-        margin-bottom: 12px;
-    }
-
-    .cart_wrapper .dropdown_content #keep_shoping {
-        text-decoration: none;
-        color: blueviolet;
-        margin-top: 12px;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .cart_wrapper #cart_icon {
-        height: 24px;
-    }
-
-    .cart_wrapper .dropdown_content {
-        text-align: center;
-    }
-
-    .login-wrapper #login-btn {
-        background-color: white;
-        border: 1px solid black;
-        padding: 10px 20px;
-
-    }
-
-    .login-wrapper #login-btn a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-    }
-
-    .signin_wrapper #signin_btn {
-        background-color: black;
-        border: 1px solid black;
-        padding: 10px 20px;
-
-    }
-
-    .signin_wrapper #signin_btn a {
-        text-decoration: none;
-        color: white;
-        font-weight: bolder;
-    }
-
-    .web_wrapper {
-        position: relative;
-    }
-
-    .web_wrapper #web_btn {
-        background-color: white;
-        border: 1px solid black;
-        padding: 6px;
-    }
-
-    .web_wrapper #web_btn a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-    }
-
-    .web_wrapper #web_btn a img {
-        height: 20px;
-    }
-
-    section {
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 100vh;
-        width: auto;
-    }
-
-    section img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-    }
-
-    article {
-        background-color: white;
-        width: 380px;
-        position: relative;
-        bottom: 268px;
-        left: 80px;
-        z-index: 200;
-        box-shadow: 1px 1px 8px gray;
-        padding: 18px 16px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: left;
-    }
-
-    article #hero_content h1 {
-        font-size: 28px;
-        font-weight: 800;
-        padding: 8px 6px;
-    }
-
-    article #hero_content p {
-        font-family: 'Franklin Gothic small', Arial, sans-serif;
-        font-size: 20px;
-        font-weight: 200;
-        line-height: 1.8rem;
-        padding: 8px 1px 8px 6px;
-    } */
+aside .segement1 {
+    display: none;
 }
 
-@media screen and (min-width: 1050px) {
+.segements_wrapper {
+    width: 100%;
+    margin: 30px 5px;
+}
 
+aside .segement2 {
+    background-color: white;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2.8rem;
+    padding: 8px 0 8px 12px;
+}
+
+aside .segement2 h1 {
+    font-size: 38px;
+    font-weight: 800;
+
+}
+
+aside .segement2 p {
+    font-family: 'Franklin Gothic small', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+
+}
+
+@media screen and (max-width: 999px) {
     header {
         width: 100%;
         background-color: white;
@@ -597,7 +358,6 @@ article #hero_content p {
         flex-direction: column;
         flex-wrap: nowrap;
         width: 228px;
-        /* line-height: 1.4rem; */
         display: none;
         z-index: 1020;
     }
@@ -645,68 +405,12 @@ article #hero_content p {
         color: gray;
     }
 
-    .business_wrapper .dropdown_content {
-        text-align: center;
-        font-weight: 600;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 328px;
-        padding: 8px;
-        right: 2px;
+    .business_wrapper {
+        display: none;
     }
 
-    .business_wrapper .dropdown_content button {
-        background-color: black;
-        border: none;
-        color: white;
-        margin-top: 8px;
-        padding: 8px;
-    }
-
-    .business_wrapper .dropdown_content button a {
-        background-color: black;
-        border: none;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .business_wrapper .dropdown_content button a:hover {
-        color: white;
-    }
-
-    .teach_wrapper .dropdown_content {
-        text-align: center;
-        font-weight: 600;
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 288px;
-        padding: 8px;
-        right: 0;
-    }
-
-    .teach_wrapper .dropdown_content button {
-        background-color: black;
-        border: none;
-        color: white;
-        margin-top: 8px;
-        padding: 8px;
-    }
-
-    .teach_wrapper .dropdown_content button a {
-        background-color: black;
-        border: none;
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-        font-size: 14px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .teach_wrapper .dropdown_content button a:hover {
-        color: white;
+    .teach_wrapper {
+        display: none;
     }
 
     .cart_wrapper .dropdown_content {
@@ -769,63 +473,63 @@ article #hero_content p {
     }
 
     .web_wrapper {
-        position: relative;
-    }
-
-    .web_wrapper #web_btn {
-        background-color: white;
-        border: 1px solid black;
-        padding: 6px;
-    }
-
-    .web_wrapper #web_btn a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-    }
-
-    .web_wrapper #web_btn a img {
-        height: 20px;
+        display: none;
     }
 
     section {
-        /* background-image: url('../images/background.jpg'); */
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 100vh;
-        width: auto;
-    }
-
-    section img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
+        width: 100%;
     }
 
     article {
+        display: none;
+    }
+
+    .segements_wrapper {
+        width: 100%;
+        margin: 30px 5px;
+    }
+
+    aside .segement1 {
+        display: flex;
+        flex-direction: column;
         background-color: white;
-        width: 380px;
-        position: relative;
-        bottom: 268px;
-        left: 80px;
-        z-index: 200;
-        box-shadow: 1px 1px 8px gray;
-        padding: 18px 16px;
+        width: 100%;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: left;
+        line-height: 2.8rem;
+        padding: 10px 0 8px 12px;
     }
 
-    article #hero_content h1 {
-        font-size: 28px;
+    aside .segement1 h1 {
+        font-size: 38px;
         font-weight: 800;
-        padding: 8px 6px;
+
     }
 
-    article #hero_content p {
+    aside .segement1 p {
         font-family: 'Franklin Gothic small', Arial, sans-serif;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 200;
-        line-height: 1.8rem;
-        padding: 8px 1px 8px 6px;
+
+    }
+
+    aside .segement2 {
+        background-color: white;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 2.8rem;
+        padding: 8px 0 8px 12px;
+    }
+
+    aside .segement2 h1 {
+        font-size: 38px;
+        font-weight: 800;
+
+    }
+
+    aside .segement2 p {
+        font-family: 'Franklin Gothic small', Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 200;
+
     }
 }
