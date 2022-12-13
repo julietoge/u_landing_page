@@ -411,6 +411,65 @@ header .wrapper {
     background-color: #ccc;
 }
 
+/* Become an instructor section styling */
+.instructor-section {
+    padding: 8px 18px;
+    margin: 98px 0 28px;
+    color: #1c1d1f;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.instrustor-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.instructor-section img {
+    margin-right: 48px;
+}
+
+.instructor-segement h1 {
+    font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+    padding: 0;
+}
+
+.instructor-segement p {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    padding: 16px 212px 18px 0;
+}
+
+.instructor-segement button {
+    background-color: #1c1d1f;
+    border: 1px solid #1c1d1f;
+    padding: 12px 16px;
+
+}
+
+.instructor-segement button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem
+}
+
+.instructor-segement button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Trusted by over great teams section styling*/
+
 @media screen and (max-width: 998px) {
     .top-categories .categories-content {
         grid-template-columns: repeat(2, 1fr);
