@@ -254,7 +254,8 @@ header .wrapper {
 
 .jumbtron-section .hero_content {
     background-color: white;
-    max-width: 38%;
+    max-width: 32%;
+    height: auto;
     position: absolute;
     top: 112px;
     left: 68px;
@@ -267,7 +268,7 @@ header .wrapper {
 .jumbtron-section h1 {
     font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     line-height: 1.25;
     letter-spacing: -.05rem;
 }
@@ -275,19 +276,20 @@ header .wrapper {
 .jumbtron-section p {
     font-weight: 400;
     line-height: 1.4;
-    font-size: 1.6rem
+    font-size: 1.4rem
 }
-
+/* selection headline styling */
 .headline-segement{
     margin-top: 20px;
     padding: 8px 18px;
     background-color: #ffffff;
     color: #000;
 }
+
 .headline-segement h1{
     font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     line-height: 1.25;
     letter-spacing: -.05rem;
 }
@@ -295,8 +297,12 @@ header .wrapper {
 .headline-segement p{
     font-weight: 400;
     line-height: 1.4;
-    font-size: 1.6rem
+    font-size: 1.4rem
 }
+/* dropdown section of the courses styling */
+/* Students viewing section styling */
+/* top categories section styling */
+
 @media screen and (max-width: 998px){
     
 }
