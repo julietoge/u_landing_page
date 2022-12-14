@@ -350,9 +350,10 @@ header .wrapper {
 
 /* Featured topics by category */
 .Featured-category {
-    padding: 8px 18px;
-    margin: 98px 0 28px;
+    padding: 42px 18px;
+    margin: 62px 0 28px;
     color: #1c1d1f;
+    background-color: rgb(245, 255, 249);
 }
 
 .Featured-category h1 {
@@ -382,7 +383,7 @@ header .wrapper {
 
 .feauted-content a {
     font-weight: 700;
-    font-size: 1.08rem;
+    font-size: 1rem;
     text-decoration: underline;
     color: rgb(95, 43, 226);
     padding-top: 22px;
@@ -408,10 +409,10 @@ header .wrapper {
 }
 
 .Featured-category button:hover {
-    background-color: #ccc;
+    background-color: rgb(241, 239, 239);
 }
 
-/* Become an instructor section styling */
+/* Become an instructor section styling and Transform your life through education section s */
 .instructor-section {
     padding: 8px 18px;
     margin: 98px 0 28px;
@@ -430,7 +431,7 @@ header .wrapper {
 }
 
 .instructor-section img {
-    margin-right: 48px;
+    margin-right: 94px;
 }
 
 .instructor-segement h1 {
@@ -439,7 +440,6 @@ header .wrapper {
     font-size: 2.2rem;
     line-height: 1.25;
     letter-spacing: -.05rem;
-    padding: 0;
 }
 
 .instructor-segement p {
@@ -469,9 +469,133 @@ header .wrapper {
 }
 
 /* Trusted by over great teams section styling*/
+.Trusted-section {
+    padding: 40px 0;
+    margin: 68px 0;
+    color: #1c1d1f;
+    background-color: rgb(245, 255, 249);
+    max-width: 100%;
+}
+
+.trusted-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 22px;
+}
+
+.trusted-content h1 {
+    font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+    word-spacing: 0.2rem;
+}
+
+.trusted-content p {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1rem;
+    padding-top: 6px;
+}
+
+.Trusted-section .trusted-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* Become an Udemy Business section styling */
+.Udemy-Business-section {
+    padding: 8px 18px;
+    margin: 88px 0 28px;
+    color: #1c1d1f;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.Udemy-Business-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 68%;
+    margin: 0 auto;
+}
+
+.Udemy-Business-segement p {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    padding: 16px 100px 18px 0;
+}
+
+.Udemy-Business-segement button {
+    background-color: #1c1d1f;
+    border: 1px solid #1c1d1f;
+    padding: 12px 16px;
+
+}
+
+.Udemy-Business-segement button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem
+}
+
+.Udemy-Business-segement button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* some styling on Transform your life through education section */
+.Transform-wrapper {
+    max-width: 80%;
+}
+
+.Transform-wrapper .instructor-segement h1 {
+    padding: 0 212px 0 0;
+}
+
+.Transform-wrapper .instructor-segement p {
+    padding: 16px 158px 18px 0;
+}
+
+/* footer: last section of the page styling */
 
 @media screen and (max-width: 998px) {
     .top-categories .categories-content {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+footer {
+    font-size: 14px;
+    height: auto;
+    max-width: 100%;
+    background-color: black;
+    color: #777;
+    padding: 60px 0;
+}
+.footer-content {
+    width: 70%;
+    margin: 0 auto;
+}
+footer h3 {
+    margin-bottom: 1.8rem;
+}
+footer a {
+    text-decoration: none;
+    color: #777;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+footer .nig {
+    margin-top: 1.8rem;
 }
